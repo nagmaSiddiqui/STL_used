@@ -1,0 +1,43 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+int main(){
+    
+    vector<int>v;
+    //use to ckeck capacity of vector//0 means memory hasn't assigned
+    cout<<"Capacity:"<<v.capacity()<<endl;
+    
+    //insert values in vector
+    v.push_back(1);
+    cout<<"Capacity:"<<v.capacity()<<endl;
+     v.push_back(2);
+    cout<<"Capacity:"<<v.capacity()<<endl;
+     v.push_back(3);
+    cout<<"Capacity:"<<v.capacity()<<endl;
+    
+    //for checking Size
+    cout<<"Size:"<<v.size()<<endl;
+    //for index value accesing
+    cout<<"element at 2 index:"<<v.at(2)<<endl;
+    // for accesing front and back element of vector
+    cout<<"front element:"<<v.front()<<endl;
+    cout<<"back element:"<<v.back()<<endl;
+    // remove or pop from back
+    cout<<"before pop"<<endl;
+    for(int i:v){
+        cout<<i<<""<<endl;
+    }
+    v.pop_back();
+    cout<<"after pop"<<endl;
+    for(int i:v){
+        cout<<i<<""<<endl;
+    }
+    
+    //comaparing size before clear all elements from vector and after
+    
+    cout<<"before clear size:"<<v.size()<<endl;
+    // used for clearing memory
+    v.clear();
+    cout<<"after clear size:"<<v.size()<<endl;
+}
