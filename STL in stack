@@ -1,0 +1,22 @@
+#include<iostream>
+#include<stack>
+
+using namespace std;
+int main(){
+    //create stack of string type
+    stack<string>s;
+    
+    s.push("how");
+    s.push("are");
+    s.push("you");
+     //print top element of stack
+     cout<<"Top element: "<<s.top()<<endl;
+    //pop top element now 2 top become 1 top element
+    s.pop();
+    cout<<"Top element: "<<s.top()<<endl;
+    cout<<"size of stack:"<<s.size()<<endl;
+  
+  cout<<"empty or not:"<<s.empty()<<endl;
+    
+}
+   
