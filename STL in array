@@ -1,0 +1,20 @@
+#include<iostream>
+#include<array>
+
+using namespace std;
+int main(){
+// using stl array
+   array<int,10>a={1,2,3,4};
+   //for size
+   int size=a.size();
+   for(int i=0;i<size;i++){
+   	cout<<a[i]<<endl;
+   }
+   // for acessing index element
+   cout<<"element at second index:"<<a.at(2)<<endl;
+   //for checking array is empty or not
+   cout<<"empty or not:"<<a.empty()<<endl;
+   //for printing first and last element
+   cout<<"first element:"<<a.front()<<endl;
+   cout<<"second element:"<<a.back()<<endl;
+}
